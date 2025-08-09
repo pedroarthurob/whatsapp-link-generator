@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerador de Link Whatsapp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+    <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+    <div id="main-container">
+        <form id="link-form" novalidate>
+            <label for="whatsapp-number">Seu número do whatsapp:</label>
+            <input type="tel" id="whatsapp-number" placeholder="83999999999" aria-label="Número do Whatsapp" required />
+
+            <label for="instagram-post-link">Link da postagem do Instagram:</label>
+            <input type="url" id="instagram-post-link" placeholder="Cole o link da postagem do Instagram"
+                aria-label="Link da postagem do Instagram" />
+
+            <label for="custom-message">Mensagem personalizada:</label>
+            <textarea id="custom-message" placeholder="Digite sua mensagem personalizada"
+                aria-label="Mensagem personalizada"></textarea>
+
+            <button type="submit" id="generate-link" aria-label="Gerar Link">Gerar Link</button>
+
+            <div id="response-container">
+                <button id="copy-button" title="Copiar" aria-label="Copiar link gerado" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        style="vertical-align:middle;margin-right:4px;" viewBox="0 0 16 16">
+                        <path
+                            d="M10 1.5A1.5 1.5 0 0 1 11.5 3v1h1A1.5 1.5 0 0 1 14 5.5v8A1.5 1.5 0 0 1 12.5 15h-7A1.5 1.5 0 0 1 4 13.5v-8A1.5 1.5 0 0 1 5.5 4h1V3A1.5 1.5 0 0 1 8 1.5h2zm-2 1A.5.5 0 0 0 7.5 3v1h3V3a.5.5 0 0 0-.5-.5h-2zM5.5 5A.5.5 0 0 0 5 5.5v8a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-7z" />
+                    </svg>
+                    Copiar
+                </button>
+                <input type="text" id="generated-link" readonly aria-label="Link gerado" />
+            </div>
+        </form>
+    </div>
+
+    <div id="push-message"></div>
+
+    <footer>
+        <p>
+            Desenvolvido por Pedro Arthur — <a href="https://github.com/pedroarthurob" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
