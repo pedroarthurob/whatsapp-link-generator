@@ -198,3 +198,48 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  html, body {
+    width: 100vw;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  #main-container {
+    padding: 0 8px 60px 8px;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 18px 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+
+  #response-container {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  #response-container input#generated-link,
+  #response-container button#copy-button {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  #push-message {
+    left: 50%;
+    width: 90vw;
+    padding: 12px 8px;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
