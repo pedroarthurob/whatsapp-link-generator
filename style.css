@@ -199,7 +199,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsividade para dispositivos móveis */
 @media (max-width: 600px) {
   html, body {
     width: 100vw;
@@ -208,12 +207,13 @@ footer a:hover {
   }
 
   #main-container {
-    padding: 0 8px 60px 8px;
+    padding: 0 16px 60px 16px;
   }
 
   form {
-    max-width: 100%;
-    padding: 18px 8px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 18px 16px;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   }
